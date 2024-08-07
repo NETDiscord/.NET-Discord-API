@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using NETDiscord.Api.Converters;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.Json.Serialization.Metadata;
 using TupleJsonConverters;
@@ -18,7 +19,12 @@ namespace NETDiscord.Api
 			DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
 			DictionaryKeyPolicy = JsonNamingPolicy.SnakeCaseLower,
 			PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower,
-			Converters = { new TupleConverter() },
+			Converters =
+			{
+				new TupleConverter(),
+				new ServiceJsonConverter(),
+				new LocaleJsonConverter()
+			},
 			TypeInfoResolver = new DefaultJsonTypeInfoResolver()
 			{
 				Modifiers = { SerializeLongAsString }

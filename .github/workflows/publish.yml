@@ -1,7 +1,7 @@
 name: Publish NuGet Package
 
 on:
-  workflow_dispach:
+  workflow_dispatch:
   push:
     branches:
       - stable

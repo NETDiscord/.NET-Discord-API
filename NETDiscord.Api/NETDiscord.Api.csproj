@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8</TargetFramework>
+		<OutputType>Library</OutputType>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+		<DebugType>portable</DebugType>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>NETDiscord.Api</RootNamespace>
+		<GenerateDocumentationFile>False</GenerateDocumentationFile>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+
+		<Version>1.0.0</Version>
+		<PackageId>NETDiscord.Api</PackageId>
+		<Title>.NET Discord API</Title>
+		<Authors>Rex Aliis</Authors>
+		<Description></Description>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/RexAliis/.NET-Discord</RepositoryUrl>
+
+		<EnableNETAnalyzers>True</EnableNETAnalyzers>
+		<EnforceExtendedAnalyzerRules>True</EnforceExtendedAnalyzerRules>
+		<RunAnalyzersDuringBuild>True</RunAnalyzersDuringBuild>
+		<RunAnalyzersDuringLiveAnalysis>True</RunAnalyzersDuringLiveAnalysis>
+		<AnalysisLevel>latest-all</AnalysisLevel>
+
+		<WarningLevel>4</WarningLevel>
+		<NoWarn>1701;1702;</NoWarn>
+		<IsPublishable>True</IsPublishable>
+		<Deterministic>True</Deterministic>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<Optimize>True</Optimize>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.10.0" PrivateAssets="all" />
+		<PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4" PrivateAssets="all" />
+		<PackageReference Include="TupleJsonConverters" Version="1.0.3" />
+	</ItemGroup>
+
+</Project>

@@ -42,7 +42,7 @@ namespace NETDiscord.Api.Channels
 		public ChannelFlags? Flags { get; init; }
 		public int? TotalMessageSent { get; init; }
 		public ImmutableArray<ForumTagObject>? AvailableTags { get; init; }
-		public ulong[]? AppliedTags { get; init; }
+		public ImmutableArray<ulong>? AppliedTags { get; init; }
 		public DefaultReactionObject? DefaultReactionEmoji { get; init; }
 		public int? DefaultThreadRateLimitPerUser { get; init; }
 		public SortOrderType? DefaultSortOrder { get; init; }

@@ -2,7 +2,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.Json.Serialization.Metadata;
-using TupleJsonConverters;
+using JsonConverters;
 
 namespace NETDiscord.Api
 {
@@ -22,6 +22,7 @@ namespace NETDiscord.Api
 			Converters =
 			{
 				new TupleConverter(),
+				new ImmutableArrayConverter(),
 				new ServiceJsonConverter(),
 				new LocaleJsonConverter()
 			},

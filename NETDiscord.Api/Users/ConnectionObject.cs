@@ -14,7 +14,7 @@ namespace NETDiscord.Api.Users
 		public required string Name { get; init; }
 		public required Service Type { get; init; }
 		public bool? Revoked { get; set; }
-		public ImmutableArray<Integration>? Integrations { get; init; }
+		public ImmutableArray<IntegrationObject>? Integrations { get; init; }
 		public required bool Verified { get; init; }
 		public required bool FriendSync { get; init; }
 		public required bool ShowActivity { get; init; }

@@ -11,6 +11,6 @@ namespace NETDiscord.Api.Channels
 		public ulong? UserID { get; init; }
 		public required string JoinTimestamp { get; init; }
 		public required int Flags { get; init; }
-		public GuildMember? Member { get; init; }
+		public GuildMemberObject? Member { get; init; }
 	}
 }

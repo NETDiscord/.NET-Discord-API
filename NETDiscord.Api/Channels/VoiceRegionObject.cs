@@ -3,7 +3,7 @@
 	/// <summary>
 	/// <see href="https://discord.com/developers/docs/resources/voice#voice-region-object">Discord API documentation</see>
 	/// </summary>
-	public class VoiceRegion : ApiObject
+	public class VoiceRegionObject : ApiObject
 	{
 		public required string ID { get; init; }
 		public required string Name { get; init; }

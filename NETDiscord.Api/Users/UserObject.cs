@@ -1,5 +1,6 @@
 ﻿using NETDiscord.Api.Common;
 using System.Text.Json.Serialization;
+using static System.Text.Json.Serialization.JsonIgnoreCondition;
 
 namespace NETDiscord.Api.Users
 {
@@ -12,10 +13,10 @@ namespace NETDiscord.Api.Users
 		public required string Username { get; init; }
 		public required string Discriminator { get; init; }
 
-		[JsonIgnore(Condition = JsonIgnoreCondition.Never)]
+		[JsonIgnore(Condition = Never)]
 		public string? GlobalName { get; init; }
 
-		[JsonIgnore(Condition = JsonIgnoreCondition.Never)]
+		[JsonIgnore(Condition = Never)]
 		public string? Avatar { get; init; }
 
 		public bool? Bot { get; init; }

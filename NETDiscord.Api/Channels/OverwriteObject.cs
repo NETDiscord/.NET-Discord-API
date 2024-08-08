@@ -7,9 +7,9 @@ namespace NETDiscord.Api.Channels
 	/// </summary>
 	public class OverwriteObject : ApiObject
 	{
-		public required ulong ID { get; set; }
-		public required OverwriteType Type { get; set; }
-		public required PermissionFlags Allow { get; set; }
-		public required PermissionFlags Deny { get; set; }
+		public required ulong ID { get; init; }
+		public required OverwriteType Type { get; init; }
+		public required PermissionFlags Allow { get; init; }
+		public required PermissionFlags Deny { get; init; }
 	}
 }

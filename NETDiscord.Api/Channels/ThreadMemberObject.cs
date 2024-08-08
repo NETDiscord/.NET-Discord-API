@@ -7,10 +7,10 @@ namespace NETDiscord.Api.Channels
 	/// </summary>
 	public class ThreadMemberObject : ApiObject
 	{
-		public ulong? ID { get; set; }
-		public ulong? UserID { get; set; }
-		public required string JoinTimestamp { get; set; }
-		public required int Flags { get; set; }
-		public GuildMember? Member { get; set; }
+		public ulong? ID { get; init; }
+		public ulong? UserID { get; init; }
+		public required string JoinTimestamp { get; init; }
+		public required int Flags { get; init; }
+		public GuildMember? Member { get; init; }
 	}
 }

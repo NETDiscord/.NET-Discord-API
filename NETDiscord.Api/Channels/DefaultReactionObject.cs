@@ -9,9 +9,9 @@ namespace NETDiscord.Api.Channels
 	public class DefaultReactionObject : ApiObject
 	{
 		[JsonIgnore(Condition = Never)]
-		public required ulong? EmojiID { get; set; }
+		public required ulong? EmojiID { get; init; }
 
 		[JsonIgnore(Condition = Never)]
-		public required string? EmojiName { get; set; }
+		public required string? EmojiName { get; init; }
 	}
 }

@@ -7,8 +7,8 @@ namespace NETDiscord.Api.Users
 	/// </summary>
 	public class ApplicationRoleConnectionObject : ApiObject
 	{
-		public string? PlatformName { get; set; }
-		public string? PlatformUsername { get; set; }
+		public string? PlatformName { get; init; }
+		public string? PlatformUsername { get; init; }
 		public required Dictionary<string, string> Metadata { get; init; }
 	}
 }

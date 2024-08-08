@@ -5,7 +5,7 @@
 	/// </summary>
 	public class FollowedChannelObject
 	{
-		public required ulong ChannelID { get; set; }
-		public required ulong WebhookID { get; set; }
+		public required ulong ChannelID { get; init; }
+		public required ulong WebhookID { get; init; }
 	}
 }

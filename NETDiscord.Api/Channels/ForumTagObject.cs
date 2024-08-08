@@ -8,14 +8,14 @@ namespace NETDiscord.Api.Channels
 	/// </summary>
 	public class ForumTagObject : ApiObject
 	{
-		public required ulong ID { get; set; }
-		public required string Name { get; set; }
-		public required bool Moderated { get; set; }
+		public required ulong ID { get; init; }
+		public required string Name { get; init; }
+		public required bool Moderated { get; init; }
 
 		[JsonIgnore(Condition = Never)]
-		public required ulong? EmojiID { get; set; }
+		public required ulong? EmojiID { get; init; }
 
 		[JsonIgnore(Condition = Never)]
-		public required string? EmojiName { get; set; }
+		public required string? EmojiName { get; init; }
 	}
 }

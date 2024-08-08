@@ -5,10 +5,10 @@
 	/// </summary>
 	public class VoiceRegion : ApiObject
 	{
-		public required string ID { get; set; }
-		public required string Name { get; set; }
-		public required bool Optimal { get; set; }
-		public required bool Deprecated { get; set; }
-		public required bool Custom { get; set; }
+		public required string ID { get; init; }
+		public required string Name { get; init; }
+		public required bool Optimal { get; init; }
+		public required bool Deprecated { get; init; }
+		public required bool Custom { get; init; }
 	}
 }

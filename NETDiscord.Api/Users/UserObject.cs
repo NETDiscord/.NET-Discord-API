@@ -8,27 +8,27 @@ namespace NETDiscord.Api.Users
 	/// </summary>
 	public class UserObject : ApiObject
 	{
-		public required ulong ID { get; set; }
-		public required string Username { get; set; }
-		public required string Discriminator { get; set; }
+		public required ulong ID { get; init; }
+		public required string Username { get; init; }
+		public required string Discriminator { get; init; }
 
 		[JsonIgnore(Condition = JsonIgnoreCondition.Never)]
-		public string? GlobalName { get; set; }
+		public string? GlobalName { get; init; }
 
 		[JsonIgnore(Condition = JsonIgnoreCondition.Never)]
-		public string? Avatar { get; set; }
+		public string? Avatar { get; init; }
 
-		public bool? Bot { get; set; }
-		public bool? System { get; set; }
-		public bool? MfaEnabled { get; set; }
-		public string? Banner { get; set; }
-		public int? AccentColor { get; set; }
-		public Locale? Locale { get; set; }
-		public bool? Verified { get; set; }
-		public string? Email { get; set; }
-		public UserFlags? Flags { get; set; }
-		public PremiumType? PremiumType { get; set; }
-		public UserFlags? PublicFlags { get; set; }
-		public AvatarDecotarionDataObject? AvatarDecorationData { get; set; }
+		public bool? Bot { get; init; }
+		public bool? System { get; init; }
+		public bool? MfaEnabled { get; init; }
+		public string? Banner { get; init; }
+		public int? AccentColor { get; init; }
+		public Locale? Locale { get; init; }
+		public bool? Verified { get; init; }
+		public string? Email { get; init; }
+		public UserFlags? Flags { get; init; }
+		public PremiumType? PremiumType { get; init; }
+		public UserFlags? PublicFlags { get; init; }
+		public AvatarDecotarionDataObject? AvatarDecorationData { get; init; }
 	}
 }

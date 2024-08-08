@@ -1,4 +1,5 @@
 ﻿using NETDiscord.Api.Guilds;
+using System.Collections.Immutable;
 using System.Diagnostics.CodeAnalysis;
 
 namespace NETDiscord.Api.Users
@@ -9,15 +10,15 @@ namespace NETDiscord.Api.Users
 	[SuppressMessage("Performance", "CA1819: Properties should not return arrays", Justification = "Definition is a DTO")]
 	public class ConnectionObject : ApiObject
 	{
-		public required ulong ID { get; set; }
-		public required string Name { get; set; }
-		public required Service Type { get; set; }
+		public required ulong ID { get; init; }
+		public required string Name { get; init; }
+		public required Service Type { get; init; }
 		public bool? Revoked { get; set; }
-		public Integration[]? Integrations { get; set; }
-		public required bool Verified { get; set; }
-		public required bool FriendSync { get; set; }
-		public required bool ShowActivity { get; set; }
-		public required bool TwoWayLink { get; set; }
-		public required VisibilityType Visibility { get; set; }
+		public ImmutableArray<Integration>? Integrations { get; init; }
+		public required bool Verified { get; init; }
+		public required bool FriendSync { get; init; }
+		public required bool ShowActivity { get; init; }
+		public required bool TwoWayLink { get; init; }
+		public required VisibilityType Visibility { get; init; }
 	}
 }

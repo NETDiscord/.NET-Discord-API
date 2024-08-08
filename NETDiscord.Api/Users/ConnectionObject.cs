@@ -7,7 +7,7 @@ namespace NETDiscord.Api.Users
 	/// <see href="https://discord.com/developers/docs/resources/user#connection-object">Discord API documentation</see>
 	/// </summary>
 	[SuppressMessage("Performance", "CA1819: Properties should not return arrays", Justification = "Definition is a DTO")]
-	public class Connection : ApiObject
+	public class ConnectionObject : ApiObject
 	{
 		public required ulong ID { get; set; }
 		public required string Name { get; set; }

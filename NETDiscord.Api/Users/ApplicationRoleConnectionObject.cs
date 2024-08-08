@@ -3,9 +3,9 @@
 namespace NETDiscord.Api.Users
 {
 	/// <summary>
-	/// <see href="https://discord.com/developers/docs/resources/user#application-role-connection-object-application-role-connection-structure">Discord API documentation</see>
+	/// <see href="https://discord.com/developers/docs/resources/user#application-role-connection-object">Discord API documentation</see>
 	/// </summary>
-	public class ApplicationRoleConnection : ApiObject
+	public class ApplicationRoleConnectionObject : ApiObject
 	{
 		public string? PlatformName { get; set; }
 		public string? PlatformUsername { get; set; }

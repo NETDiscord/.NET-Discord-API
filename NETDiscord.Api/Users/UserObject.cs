@@ -6,7 +6,7 @@ namespace NETDiscord.Api.Users
 	/// <summary>
 	/// <see href="https://discord.com/developers/docs/resources/user#user-object">Discord API documentation</see>
 	/// </summary>
-	public class User : ApiObject
+	public class UserObject : ApiObject
 	{
 		public required ulong ID { get; set; }
 		public required string Username { get; set; }
@@ -29,6 +29,6 @@ namespace NETDiscord.Api.Users
 		public UserFlags? Flags { get; set; }
 		public PremiumType? PremiumType { get; set; }
 		public UserFlags? PublicFlags { get; set; }
-		public AvatarDecotarionData? AvatarDecorationData { get; set; }
+		public AvatarDecotarionDataObject? AvatarDecorationData { get; set; }
 	}
 }

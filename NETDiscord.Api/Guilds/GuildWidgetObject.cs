@@ -1,8 +1,8 @@
-﻿using System.Text.Json.Serialization;
-using static System.Text.Json.Serialization.JsonIgnoreCondition;
-using System.Collections.Immutable;
-using NETDiscord.Api.Channels;
+﻿using NETDiscord.Api.Channels;
 using NETDiscord.Api.Users;
+using System.Collections.Immutable;
+using System.Text.Json.Serialization;
+using static System.Text.Json.Serialization.JsonIgnoreCondition;
 
 namespace NETDiscord.Api.Guilds
 {

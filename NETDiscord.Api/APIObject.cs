@@ -1,8 +1,8 @@
-﻿using NETDiscord.Api.Converters;
+﻿using JsonConverters;
+using NETDiscord.Api.Converters;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.Json.Serialization.Metadata;
-using JsonConverters;
 
 namespace NETDiscord.Api
 {

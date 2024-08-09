@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using NETDiscord.Api.Users;
 using System.Text.Json.Serialization;
 using static System.Text.Json.Serialization.JsonIgnoreCondition;
-using System.Threading.Tasks;
-using NETDiscord.Api.Users;
 
 namespace NETDiscord.Api.Guilds
 {

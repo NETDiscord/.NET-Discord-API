@@ -11,8 +11,6 @@ namespace NETDiscord.Api.Guilds
 	/// <summary>
 	/// <see href="https://discord.com/developers/docs/resources/guild#integration-object">Discord API documentation</see>
 	/// </summary>
-	[SuppressMessage("Performance", "CA1819: Properties should not return arrays", Justification = "Definition is a DTO")]
-	[GeneratePartial]
 	public record class IntegrationObject : ApiObject
 	{
 		public required ulong ID { get; init; }

@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NETDiscord.Api.Emoji;
+using NETDiscord.Api.Sticker;
+using System.Collections.Immutable;
 using System.Text.Json.Serialization;
 using static System.Text.Json.Serialization.JsonIgnoreCondition;
-using System.Collections.Immutable;
-using NETDiscord.Api.Emoji;
-using NETDiscord.Api.Sticker;
 
 namespace NETDiscord.Api.Guilds
 {

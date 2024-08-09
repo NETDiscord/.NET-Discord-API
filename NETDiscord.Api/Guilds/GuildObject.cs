@@ -1,5 +1,4 @@
-﻿using NETDiscord.Api.Channels;
-using NETDiscord.Api.Common;
+﻿using NETDiscord.Api.Common;
 using NETDiscord.Api.Emoji;
 using NETDiscord.Api.Permissions;
 using NETDiscord.Api.Sticker;

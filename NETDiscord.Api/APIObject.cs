@@ -24,7 +24,9 @@ namespace NETDiscord.Api
 				new TupleConverter(),
 				new ImmutableArrayConverter(),
 				new ServiceJsonConverter(),
-				new LocaleJsonConverter()
+				new LocaleJsonConverter(),
+				new GuildFeatureJsonConverter(),
+				new OAuth2ScopeJsonConverter()
 			},
 			TypeInfoResolver = new DefaultJsonTypeInfoResolver()
 			{

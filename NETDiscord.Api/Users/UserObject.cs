@@ -7,7 +7,7 @@ namespace NETDiscord.Api.Users
 	/// <summary>
 	/// <see href="https://discord.com/developers/docs/resources/user#user-object">Discord API documentation</see>
 	/// </summary>
-	public class UserObject : ApiObject
+	public record class UserObject : ApiObject
 	{
 		public required ulong ID { get; init; }
 		public required string Username { get; init; }

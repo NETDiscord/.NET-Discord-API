@@ -3,7 +3,7 @@
 	/// <summary>
 	/// <see href="https://discord.com/developers/docs/resources/channel#thread-metadata-object">Discord API documentation</see>
 	/// </summary>
-	public class ThreadMetadataObject : ApiObject
+	public record class ThreadMetadataObject : ApiObject
 	{
 		public required bool Archived { get; init; }
 		public required int AutoArchiveDuration { get; init; }

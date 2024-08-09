@@ -10,7 +10,7 @@ namespace NETDiscord.Api.Channels
 	/// </summary>
 
 	[SuppressMessage("Performance", "CA1819: Properties should not return arrays", Justification = "Definition is a DTO")]
-	public class ChannelObject : ApiObject
+	public record class ChannelObject : ApiObject
 	{
 		public required ulong ID { get; init; }
 		public required ChannelType Type { get; init; }

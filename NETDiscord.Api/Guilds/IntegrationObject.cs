@@ -13,7 +13,7 @@ namespace NETDiscord.Api.Guilds
 	/// </summary>
 	[SuppressMessage("Performance", "CA1819: Properties should not return arrays", Justification = "Definition is a DTO")]
 	[GeneratePartial]
-	public class IntegrationObject : ApiObject
+	public record class IntegrationObject : ApiObject
 	{
 		public required ulong ID { get; init; }
 		public required string Name { get; init; }

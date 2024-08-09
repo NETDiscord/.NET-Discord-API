@@ -6,7 +6,7 @@ namespace NETDiscord.Api.Channels
 	/// <summary>
 	/// <see href="https://discord.com/developers/docs/resources/channel#forum-tag-object">Discord API documentation</see>
 	/// </summary>
-	public class ForumTagObject : ApiObject
+	public record class ForumTagObject : ApiObject
 	{
 		public required ulong ID { get; init; }
 		public required string Name { get; init; }

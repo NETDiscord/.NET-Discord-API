@@ -10,7 +10,7 @@ namespace NETDiscord.Api.Guilds
 	/// <summary>
 	/// <see href="https://discord.com/developers/docs/resources/guild#guild-onboarding-object">Discord API documentation</see>
 	/// </summary>
-	public class GuildOnboardingObject : ApiObject
+	public record class GuildOnboardingObject : ApiObject
 	{
 		public required ulong GuildID { get; init; }
 		public required ImmutableArray<GuildOnboardingPromptObject> Prompts { get; init; }

@@ -11,7 +11,7 @@ namespace NETDiscord.Api.Guilds
 	/// <summary>
 	/// <see href="https://discord.com/developers/docs/resources/guild#guild-widget-settings-object">Discord API documentation</see>
 	/// </summary>
-	public class GuildWidgetSettingsObject : ApiObject
+	public record class GuildWidgetSettingsObject : ApiObject
 	{
 		public required bool Enabled { get; init; }
 

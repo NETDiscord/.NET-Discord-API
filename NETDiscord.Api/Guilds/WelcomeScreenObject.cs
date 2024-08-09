@@ -12,7 +12,7 @@ namespace NETDiscord.Api.Guilds
 	/// <summary>
 	/// <see href="https://discord.com/developers/docs/resources/guild#welcome-screen-object">Discord API documentation</see>
 	/// </summary>
-	public class WelcomeScreenObject : ApiObject
+	public record class WelcomeScreenObject : ApiObject
 	{
 		[JsonIgnore(Condition = Never)]
 		public string? Description { get; init; }

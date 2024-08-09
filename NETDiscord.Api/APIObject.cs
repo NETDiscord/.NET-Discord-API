@@ -6,7 +6,7 @@ using JsonConverters;
 
 namespace NETDiscord.Api
 {
-	public abstract class ApiObject
+	public record class ApiObject
 	{
 		private static readonly JsonSerializerOptions _options = new()
 		{

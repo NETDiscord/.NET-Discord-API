@@ -8,7 +8,7 @@ namespace NETDiscord.Api.Guilds
 	/// <summary>
 	/// <see href="https://discord.com/developers/docs/resources/guild#guild-onboarding-object-prompt-option-structure">Discord API documentation</see>
 	/// </summary>
-	public class PromptOptionObject : ApiObject
+	public record class PromptOptionObject : ApiObject
 	{
 		public required ulong ID { get; init; }
 		public required ImmutableArray<ulong> ChannelIds { get; init; }

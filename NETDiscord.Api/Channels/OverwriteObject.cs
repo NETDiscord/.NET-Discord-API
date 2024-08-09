@@ -5,7 +5,7 @@ namespace NETDiscord.Api.Channels
 	/// <summary>
 	/// <see href="https://discord.com/developers/docs/resources/channel#overwrite-object">Discord API documentation</see>
 	/// </summary>
-	public class OverwriteObject : ApiObject
+	public record class OverwriteObject : ApiObject
 	{
 		public required ulong ID { get; init; }
 		public required OverwriteType Type { get; init; }

@@ -5,7 +5,7 @@ namespace NETDiscord.Api.Channels
 	/// <summary>
 	/// <see href="https://discord.com/developers/docs/resources/channel#thread-member-object">Discord API documentation</see>
 	/// </summary>
-	public class ThreadMemberObject : ApiObject
+	public record class ThreadMemberObject : ApiObject
 	{
 		public ulong? ID { get; init; }
 		public ulong? UserID { get; init; }

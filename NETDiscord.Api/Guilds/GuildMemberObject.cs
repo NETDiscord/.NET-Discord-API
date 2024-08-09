@@ -9,7 +9,7 @@ namespace NETDiscord.Api.Guilds
 	/// <see href="https://discord.com/developers/docs/resources/guild#guild-member-object">Discord API documentation</see>
 	/// </summary>
 	[SuppressMessage("Performance", "CA1819: Properties should not return arrays", Justification = "Definition is a DTO")]
-	public class GuildMemberObject : ApiObject
+	public record class GuildMemberObject : ApiObject
 	{
 		public UserObject? User { get; init; }
 		public string? Nick { get; init; }

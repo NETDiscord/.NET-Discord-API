@@ -5,7 +5,7 @@ namespace NETDiscord.Api.Common
 	/// <summary>
 	/// <see href="https://discord.com/developers/docs/reference#locales">Discord API Documentation</see>
 	/// </summary>
-	public class Localizations : ApiObject
+	public record class Localizations : ApiObject
 	{
 		[JsonPropertyName("id")]
 		public string? Indonesian { get; set; }

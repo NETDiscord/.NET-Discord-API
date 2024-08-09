@@ -14,7 +14,7 @@ namespace NETDiscord.Api.Guilds
 	/// <see href="https://discord.com/developers/docs/resources/guild#guild-object">Discord API documentation</see>
 	/// </summary>
 	[SuppressMessage("Design", "CA1056: URI properties should not be strings", Justification = "Property doesn't represent a URI")]
-	public class GuildObject : ApiObject
+	public record class GuildObject : ApiObject
 	{
 		public required ulong ID { get; init; }
 		public required string Name { get; init; }

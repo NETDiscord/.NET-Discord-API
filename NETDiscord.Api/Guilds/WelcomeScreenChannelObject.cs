@@ -6,7 +6,7 @@ namespace NETDiscord.Api.Guilds
 	/// <summary>
 	/// <see href="https://discord.com/developers/docs/resources/guild#welcome-screen-object-welcome-screen-channel-structure">Discord API documentation</see>
 	/// </summary>
-	public class WelcomeScreenChannelObject : ApiObject
+	public record class WelcomeScreenChannelObject : ApiObject
 	{
 		public required ulong ChannelID { get; init; }
 		public required string Description { get; init; }

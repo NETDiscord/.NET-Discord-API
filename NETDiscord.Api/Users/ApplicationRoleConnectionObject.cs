@@ -5,7 +5,7 @@ namespace NETDiscord.Api.Users
 	/// <summary>
 	/// <see href="https://discord.com/developers/docs/resources/user#application-role-connection-object">Discord API documentation</see>
 	/// </summary>
-	public class ApplicationRoleConnectionObject : ApiObject
+	public record class ApplicationRoleConnectionObject : ApiObject
 	{
 		public string? PlatformName { get; init; }
 		public string? PlatformUsername { get; init; }
